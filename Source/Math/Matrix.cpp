@@ -286,7 +286,7 @@ void Matrix<ElemType>::SetDataLocation(CurrentDataLocation location, MatrixType 
 }
 
 template <class ElemType>
-void Matrix<ElemType>::EnableUseCachedResize() { m_useCachedResize = true; }
+void Matrix<ElemType>::UseCachedResizeOrNot(bool useCachedResize) { m_useCachedResize = useCachedResize; }
 
 //this is a private constructor only used internally to initialize a blank matrix
 template <class ElemType>
